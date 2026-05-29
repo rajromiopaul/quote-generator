@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 
-.quote-container{
+.quote-container {
   width: auto;
   max-width: 900px;
   padding: 20px 30px;
@@ -27,32 +27,32 @@ body {
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.quote-text{
+.quote-text {
   font-size: 2.75rem;
 }
 
-.long-quote{
+.long-quote {
   font-size: 2rem;
 }
 
-.fa-quote-left{
+.fa-quote-left {
   font-size: 4rem;
 }
 
-.quote-author{
+.quote-author {
   margin-top: 15px;
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
 }
 
-.button-container{
+.button-container {
   margin-top: 15px;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
-button{
+button {
   cursor: pointer;
   font-size: 1.2rem;
   height: 2.5rem;
@@ -65,30 +65,49 @@ button{
   box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
 }
 
-button:hover{
+button:hover {
   filter: brightness(110%);
 }
 
-button:active{
+button:active {
   transform: translate(0, 0.3rem);
   box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
 }
 
-.twitter-button:hover{
+.twitter-button:hover {
   color: #38a1f3;
 }
 
-.fa-twitter{
+.fa-twitter {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1000px) {
-  .quote-container{
-    margin: auto 10px;
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .quote-text{
-    font-size: 2.5rem;
+  100% {
+    transform: rotate(360deg);
   }
 }
 
+
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
