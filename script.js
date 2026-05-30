@@ -20,9 +20,8 @@ function removeLoadingSpinner() {
 // Get Quotes From API
 async function getQuote() {
     showLoadingSpinner()
-    const apiUrl = 'https://dummyjson.com/quotes/random';
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch('https://dummyjson.com/quotes/random');
         const quotesData = await response.json()
         console.log(quotesData)
         authorText.textContent = quotesData.author;
